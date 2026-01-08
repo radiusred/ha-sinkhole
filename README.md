@@ -1,4 +1,5 @@
 # HA Sinkhole <!-- omit from toc -->
+![CI Build](https://github.com/davison/ha-sinkhole/actions/workflows/publish-images.yml/badge.svg)
 
 <img align="right" src=".files/ha-sinkhole-architecture-logo.drawio.svg" alt="logo" title="HA Sinkhole" style="max-width: 250px">
 
@@ -19,6 +20,8 @@
     - [Upgrade to newer components?](#upgrade-to-newer-components)
     - [Uninstall all the ha-sinkhole components?](#uninstall-all-the-ha-sinkhole-components)
     - [Send metrics to my grafana cloud account?](#send-metrics-to-my-grafana-cloud-account)
+  - [License](#license)
+
 
 # 👋 Intro
 `ha-sinkhole` is a highly available DNS sinkhole service, designed to prevent ads, trackers, malware and other unwanted content appearing in your browser, your mobile apps, your smart TVs and any other Internet connected device on your network.
@@ -209,3 +212,13 @@ This will update any required containers and config based on the release manifes
 1. Add your prometheus host, account number and API token to the inventory file
 2. Run the installer
 3. See the details in the [stats-collector README](./stats-collector/README.md#cloud-metrics)
+
+---
+
+## License
+
+Licensed under the Apache License, Version 2.0.
+See: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+Copyright 2026 [Radius Red Ltd.](https://github.com/radiusred)
+
