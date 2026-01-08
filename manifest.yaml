@@ -18,16 +18,17 @@
 
 stable:
   # Component versions guaranteed to work together after integration testing.
-  dns-resolver: "v1.1.1"
-  stats-collector: "v1.0.2"
-  vip-manager: "v1.0.0"
-  blocklist-updater: "v1.0.0"
-  installer: "v1.0.4"
+  dns-resolver: "v1.1.2"
+  stats-collector: "v1.0.3"
+  vip-manager: "v1.0.1"
+  blocklist-updater: "v1.0.1"
+  installer: "v1.0.5"
 
 edge:
   # Latest published component versions used for pre-release testing.
-  dns-resolver: "v1.1.1"
-  stats-collector: "v1.0.2"
-  vip-manager: "v1.0.0"
-  blocklist-updater: "v1.0.0"
-  installer: "v1.0.4"
+  dns-resolver: "v1.1.2"
+  stats-collector: "v1.0.3"
+  vip-manager: "v1.0.1"
+  blocklist-updater: "v1.0.1"
+  installer: "v1.0.5"
+
