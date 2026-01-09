@@ -7,7 +7,7 @@
 
 All use of pre-1.0.0 versions of components is entirely at your own risk
 
-All container images carry a semantic version tag, mapped by "channel" releases in the [manifest](https://github.com/davison/ha-sinkhole/releases/download/channel-manifest-artifact/manifest.yaml). You should always install either `edge` or `stable` (or another channel label if one exists) and not one of the numeric semver tags unless you've been advised to do so. This may happen for example to temporarily deal with some regression issue or incompatibility in the most recent channel version.
+All container images carry a semantic version tag, mapped by "channel" releases in the [manifest](https://github.com/radiusred/ha-sinkhole/releases/download/channel-manifest-artifact/manifest.yaml). You should always install either `edge` or `stable` (or another channel label if one exists) and not one of the numeric semver tags unless you've been advised to do so. This may happen for example to temporarily deal with some regression issue or incompatibility in the most recent channel version.
   
 | Container Version | Supported          |
 | ----------- | ------------------ |

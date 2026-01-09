@@ -2,7 +2,7 @@ FROM alpine:3
 
 ARG BUILD_VERSION
 
-LABEL org.opencontainers.image.source=https://github.com/davison/ha-sinkhole/installer
+LABEL org.opencontainers.image.source=https://github.com/radiusred/ha-sinkhole/installer
 LABEL org.opencontainers.image.description="Installs modifies or uninstalls the various components of ha-sinkhole to target machines."
 LABEL org.opencontainers.image.licenses=MIT
 LABEL org.opencontainers.image.version="$BUILD_VERSION"

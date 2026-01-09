@@ -1,5 +1,5 @@
 # HA Sinkhole <!-- omit from toc -->
-![CI Build](https://github.com/davison/ha-sinkhole/actions/workflows/publish-images.yml/badge.svg)
+![CI Build](https://github.com/radiusred/ha-sinkhole/actions/workflows/publish-images.yml/badge.svg)
 
 <img align="right" src=".files/ha-sinkhole-architecture-logo.drawio.svg" alt="logo" title="HA Sinkhole" style="max-width: 250px">
 

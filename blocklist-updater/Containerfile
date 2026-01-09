@@ -2,7 +2,7 @@ FROM alpine:3
 
 ARG BUILD_VERSION
 
-LABEL org.opencontainers.image.source=https://github.com/davison/ha-sinkhole/blocklist_updater
+LABEL org.opencontainers.image.source=https://github.com/radiusred/ha-sinkhole/blocklist_updater
 LABEL org.opencontainers.image.description="A simple container to download and update blocklists for ha-sinkhole."
 LABEL org.opencontainers.image.licenses=MIT
 LABEL org.opencontainers.image.version="$BUILD_VERSION"
