@@ -5,7 +5,7 @@ RefuseManualStart=yes
 RefuseManualStop=yes
 
 [Container]
-Image=ghcr.io/davison/ha-sinkhole/blocklist-updater:{{ ha_sinkhole_manifest[install_channel]['blocklist-updater'] | default('MISSING_VERSION') }}
+Image=ghcr.io/radiusred/ha-sinkhole/blocklist-updater:{{ ha_sinkhole_manifest[install_channel]['blocklist-updater'] | default('MISSING_VERSION') }}
 {% if blocklist_urls is defined %}Environment=BLOCKLIST_URLS="{{ blocklist_urls | join(' ') }}"
 {% endif %}
 Volume={{ ha_sinkhole_common_dir }}/data:/data:Z

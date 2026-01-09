@@ -9,7 +9,7 @@ After=blocklist-updater.service
 
 [Container]
 Pod=ha-node.pod
-Image=ghcr.io/davison/ha-sinkhole/dns-resolver:{{ ha_sinkhole_manifest[install_channel]['dns-resolver'] | default('MISSING_VERSION') }}
+Image=ghcr.io/radiusred/ha-sinkhole/dns-resolver:{{ ha_sinkhole_manifest[install_channel]['dns-resolver'] | default('MISSING_VERSION') }}
 Environment=LOCAL_DOMAIN={{ local_domain | default('') }}
 Environment=LOCAL_UPSTREAM_DNS="{{ local_upstream_dns | default('') }}"
 Environment=UPSTREAM_DNS="{{ upstream_dns | default('') | join(' ') }}"

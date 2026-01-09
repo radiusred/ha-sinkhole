@@ -2,7 +2,7 @@ FROM docker.io/grafana/alloy:v1.11.3
 
 ARG BUILD_VERSION
 
-LABEL org.opencontainers.image.source=https://github.com/davison/ha-sinkhole/stats-collector
+LABEL org.opencontainers.image.source=https://github.com/radiusred/ha-sinkhole/stats-collector
 LABEL org.opencontainers.image.description="Collector for metrics and logs"
 LABEL org.opencontainers.image.licenses=MIT
 LABEL org.opencontainers.image.version="$BUILD_VERSION"

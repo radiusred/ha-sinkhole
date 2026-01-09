@@ -18,7 +18,7 @@ readonly cross_mark="${red}✘${reset}"
 inventory_file=""
 playbook="install"
 container_cmd=podman
-manifest_url="https://github.com/davison/ha-sinkhole/releases/download/channel-manifest-artifact/manifest.yaml"
+manifest_url="https://github.com/radiusred/ha-sinkhole/releases/download/channel-manifest-artifact/manifest.yaml"
 installer_container=""  # Will be set after parsing inventory and fetching manifest
 native_mode=false
 
@@ -179,7 +179,7 @@ if [[ -z "$installer_container" ]]; then
     ok "Using install channel: ${bold}${channel}${reset}"
     ok "Finding installer version from ${bold}${channel}${reset} release manifest..."
     installer_version=$(get_installer_version "$channel")
-    installer_container="ghcr.io/davison/ha-sinkhole/installer:${installer_version}"
+    installer_container="ghcr.io/radiusred/ha-sinkhole/installer:${installer_version}"
     ok "Pulling installer container: ${bold}${installer_version}${reset}..."
     $container_cmd pull "$installer_container" > /dev/null 2>&1 || error_exit "Failed to pull installer container: ${bold}${installer_container}${reset}"
 fi

@@ -2,7 +2,7 @@ FROM alpine:3
 
 ARG BUILD_VERSION
 
-LABEL org.opencontainers.image.source=https://github.com/davison/ha-sinkhole/dns-resolver
+LABEL org.opencontainers.image.source=https://github.com/radiusred/ha-sinkhole/dns-resolver
 LABEL org.opencontainers.image.description="DNS resolver that uses provided blocklists and then forwards to configured upstream resolvers."
 LABEL org.opencontainers.image.licenses=MIT
 LABEL org.opencontainers.image.version="$BUILD_VERSION"
@@ -21,7 +21,7 @@ RUN mkdir -p /usr/local/bin
 RUN ARCH=$(uname -m) && \
     if [ "$ARCH" = "x86_64" ]; then ARCH="amd64"; fi && \
     if [ "$ARCH" = "aarch64" ]; then ARCH="arm64"; fi && \
-    DOWNLOAD_URL=$(curl -sL https://api.github.com/repos/davison/coredns/releases/latest | jq -r '.assets[] | select(.name=="coredns-custom-'"$ARCH"'") | .browser_download_url'); \
+    DOWNLOAD_URL=$(curl -sL https://api.github.com/repos/radiusred/coredns/releases/latest | jq -r '.assets[] | select(.name=="coredns-custom-'"$ARCH"'") | .browser_download_url'); \
     echo $DOWNLOAD_URL; \
     curl -fsSL "$DOWNLOAD_URL" -o /usr/local/bin/coredns && chmod +x /usr/local/bin/coredns 
 

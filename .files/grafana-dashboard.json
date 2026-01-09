@@ -63,7 +63,7 @@
       }
     ]
   },
-  "description": "A dashboard for ha-sinkhole (https://github.com/davison/ha-sinkhole)",
+  "description": "A dashboard for ha-sinkhole (https://github.com/radiusred/ha-sinkhole)",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
@@ -78,7 +78,7 @@
       "title": "ha-sinkhole",
       "tooltip": "",
       "type": "link",
-      "url": "https://github.com/davison/ha-sinkhole"
+      "url": "https://github.com/radiusred/ha-sinkhole"
     }
   ],
   "panels": [
